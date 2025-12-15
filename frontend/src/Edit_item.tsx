@@ -187,7 +187,9 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
                 border: '1px solid #d1d5db',
                 borderRadius: '8px',
                 fontSize: '14px',
-                outline: 'none'
+                outline: 'none',
+                backgroundColor: 'white',
+                color: '#1f2937'
               }}
             />
           </div>
@@ -215,13 +217,15 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
                 fontSize: '14px',
                 outline: 'none',
                 resize: 'vertical',
-                fontFamily: 'inherit'
+                fontFamily: 'inherit',
+                backgroundColor: 'white',
+                color: '#1f2937'
               }}
             />
           </div>
 
           {/* Available Sizes */}
-          <div style={{ marginBottom: '16px' }}>
+          <div style={{ marginBottom: '15px' }}>
             <label style={{
               display: 'block',
               fontSize: '14px',
@@ -257,12 +261,15 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
                   onChange={(e) => handleSizeChange(sizeItem.id, 'size', e.target.value)}
                   placeholder="16 oz"
                   style={{
-                    flex: 1,
-                    padding: '8px 12px',
+                    width: '70px',
+                    padding: '8px 10px',
                     border: '1px solid #d1d5db',
                     borderRadius: '6px',
                     fontSize: '14px',
-                    outline: 'none'
+                    outline: 'none',
+                    backgroundColor: 'white',
+                    color: '#1f2937',
+                    flexShrink: 0
                   }}
                 />
                 
@@ -281,12 +288,15 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
                   onChange={(e) => handleSizeChange(sizeItem.id, 'price', e.target.value)}
                   placeholder="₱140.00"
                   style={{
-                    flex: 1,
-                    padding: '8px 12px',
+                    width: '90px',
+                    padding: '8px 10px',
                     border: '1px solid #d1d5db',
                     borderRadius: '6px',
                     fontSize: '14px',
-                    outline: 'none'
+                    outline: 'none',
+                    backgroundColor: 'white',
+                    color: '#1f2937',
+                    flexShrink: 0
                   }}
                 />
                 
@@ -305,7 +315,8 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
                     cursor: 'pointer',
                     fontSize: '16px',
                     fontWeight: 'bold',
-                    flexShrink: 0
+                    flexShrink: 0,
+                    marginLeft: 'auto'
                   }}
                 >
                   −
@@ -359,7 +370,7 @@ const Edit_item = ({ product, onClose, onSave, onDelete }: Edit_itemProps) => {
               style={{
                 flex: 1,
                 padding: '12px',
-                backgroundColor: '#3c3c3c',
+                backgroundColor: '#3B302A',
                 color: 'white',
                 border: 'none',
                 borderRadius: '24px',
